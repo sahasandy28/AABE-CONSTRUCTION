@@ -1,0 +1,1331 @@
+/* ==========================================================================
+   AABE CONSTRUCTION — DEDICATED ABOUT PAGE STYLESHEET
+   PALETTE: RICH RED (#A00012) + METALLIC GOLD (#D4A72C) + WARM IVORY (#FFF9F1)
+   ========================================================================== */
+
+body.about-page {
+    overflow-x: hidden;
+    background-color: var(--ivory, #FFF9F1);
+    color: var(--text-dark, #111111);
+}
+
+.about-page main section[id] {
+    scroll-margin-top: 90px;
+}
+
+/* =========================================
+   01. ABOUT HERO
+========================================= */
+.about-hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--dark-red-bg, #4A0008);
+}
+
+.about-hero .hero-bg-parallax {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    height: 100%;
+}
+
+.about-hero .hero-bg-parallax img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.92;
+}
+
+.about-hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(56, 0, 7, 0.48) 0%,
+        rgba(78, 0, 9, 0.44) 50%,
+        rgba(40, 0, 5, 0.60) 100%
+    );
+    z-index: 1;
+}
+
+.about-hero .hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: var(--ivory, #FFF9F1);
+    max-width: 860px;
+    padding: 130px 24px 70px;
+}
+
+.about-hero .hero-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid var(--gold-main, #D4A72C);
+    border-radius: 30px;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 22px;
+    background: rgba(212, 167, 44, 0.15);
+    color: var(--gold-light, #F4D77A);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about-hero h1 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(2.3rem, 5vw, 3.8rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #FFFFFF;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+}
+
+.about-hero h1 .gold-text {
+    background: linear-gradient(135deg, #F4D77A 0%, #D4A72C 50%, #FFF0A8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-hero .hero-content > p {
+    font-size: clamp(1rem, 1.8vw, 1.18rem);
+    margin-bottom: 2.2rem;
+    color: rgba(255, 249, 241, 0.9);
+    line-height: 1.8;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.about-hero .hero-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.about-hero .hero-cta .btn {
+    min-height: 48px;
+    padding: 0.85rem 1.85rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.about-hero .hero-cta .btn-gold {
+    background: linear-gradient(135deg, #FFF0A8 0%, #D4A72C 35%, #E6BE4A 60%, #A87418 100%);
+    color: #4A0008;
+    border: 1px solid rgba(255, 240, 168, 0.75);
+    box-shadow: 0 8px 25px rgba(154, 100, 20, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+.about-hero .hero-cta .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(212, 167, 44, 0.4);
+}
+
+/* FIX 2: Premium Ivory/White Button for VIEW PROJECTS */
+.about-hero .hero-cta .btn-outline-light,
+.about-hero .hero-cta .btn-ivory-cta {
+    background-color: var(--ivory, #FFF9F1);
+    color: var(--brand-red, #7A000E);
+    border: 1.5px solid rgba(212, 167, 44, 0.65);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.about-hero .hero-cta .btn-outline-light:hover,
+.about-hero .hero-cta .btn-ivory-cta:hover {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F1 50%, #F5E8D2 100%);
+    border-color: var(--gold-main, #D4A72C);
+    color: #520008;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 15px rgba(212, 167, 44, 0.25);
+}
+
+.about-hero .hero-cta .btn-outline-light:focus-visible,
+.about-hero .hero-cta .btn-ivory-cta:focus-visible {
+    outline: 2px solid var(--gold-main, #D4A72C);
+    outline-offset: 2px;
+}
+
+.about-hero .scroll-indicator {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.about-hero .mouse {
+    width: 22px;
+    height: 36px;
+    border: 2px solid rgba(212, 167, 44, 0.6);
+    border-radius: 12px;
+    position: relative;
+}
+
+.about-hero .mouse::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 7px;
+    background: var(--gold-main, #D4A72C);
+    border-radius: 2px;
+    animation: mouseScroll 2s infinite ease-in-out;
+}
+
+@keyframes mouseScroll {
+    0% { transform: translate(-50%, 0); opacity: 1; }
+    80% { transform: translate(-50%, 14px); opacity: 0; }
+    100% { transform: translate(-50%, 0); opacity: 0; }
+}
+
+/* =========================================
+   02. OUR STORY
+========================================= */
+.about-story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-story-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3.8;
+    box-shadow: 0 16px 40px rgba(74, 0, 8, 0.12);
+    border: 2px solid rgba(212, 167, 44, 0.35);
+}
+
+.about-story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.about-story-image:hover img {
+    transform: scale(1.03);
+}
+
+.about-story-content .eyebrow {
+    color: var(--gold-deep, #8A5A12);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.about-story-content h2 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+}
+
+.about-story-content p {
+    color: var(--text-muted, #161616);
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.about-story-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 2rem;
+}
+
+.about-story-detail {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 18px 20px;
+    border: 1px solid rgba(212, 167, 44, 0.3);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-story-detail:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold-main, #D4A72C);
+}
+
+.about-story-detail span {
+    display: block;
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.about-story-detail p {
+    font-size: 0.8125rem;
+    margin: 0;
+    color: var(--text-muted, #161616);
+    line-height: 1.45;
+}
+
+/* =========================================
+   03. CINEMATIC JOURNEY TIMELINE
+========================================= */
+.journey-cinematic {
+    position: relative;
+    overflow-x: clip;
+    background-color: var(--cream, #F6EDE1);
+}
+
+.journey-scroll-track {
+    display: block;
+    position: relative;
+    padding: 90px 0;
+}
+
+.journey-inner {
+    width: 100%;
+    max-width: var(--container-width, 1380px);
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+}
+
+.journey-header {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.journey-eyebrow {
+    letter-spacing: 0.16em;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--gold-deep, #8A5A12);
+    margin-bottom: 8px;
+}
+
+.journey-heading {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.journey-intro-subtitle {
+    font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
+    color: var(--text-muted, #161616);
+    max-width: 620px;
+    margin: 10px auto 0;
+    line-height: 1.6;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: clamp(32px, 5vw, 60px);
+    align-items: center;
+}
+
+/* Years line display */
+.journey-years-display {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.journey-year {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+}
+
+.journey-line-container {
+    flex: 1;
+    height: 4px;
+    background: rgba(160, 0, 18, 0.12);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.journey-line-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #A00012 0%, #D4A72C 100%);
+    width: 20%;
+    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Interactive Marker Tabs */
+.journey-markers {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.journey-marker {
+    background: #FFFFFF;
+    border: 1px solid rgba(212, 167, 44, 0.4);
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-muted, #161616);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.journey-marker:hover,
+.journey-marker:focus-visible {
+    background: var(--ivory, #FFF9F1);
+    border-color: var(--gold-main, #D4A72C);
+    color: var(--brand-red, #A00012);
+    outline: none;
+}
+
+.journey-marker.is-active {
+    background: var(--brand-red, #A00012);
+    border-color: var(--gold-main, #D4A72C);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(160, 0, 18, 0.25);
+}
+
+.journey-marker-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold-main, #D4A72C);
+    display: inline-block;
+}
+
+.journey-marker.is-active .journey-marker-dot {
+    background: #FFFFFF;
+}
+
+/* Phase content cards */
+.journey-content-panel {
+    position: relative;
+    min-height: 240px;
+}
+
+.journey-phase-content {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.journey-phase-content.is-active {
+    display: block;
+}
+
+.journey-phase-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: var(--gold-deep, #8A5A12);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.journey-phase-title {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.journey-phase-lead {
+    font-weight: 600;
+    color: var(--gold-deep, #8A5A12);
+    font-size: 0.9375rem;
+    margin-bottom: 8px;
+}
+
+.journey-phase-desc {
+    color: var(--text-muted, #161616);
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.journey-phase-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.journey-phase-tags span {
+    background: #FFFFFF;
+    border: 1px solid rgba(212, 167, 44, 0.35);
+    color: var(--brand-red, #A00012);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Journey Right Image Frame */
+.journey-right {
+    position: relative;
+}
+
+.journey-image-frame {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(212, 167, 44, 0.45);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    background: #121212;
+}
+
+.journey-image-layer {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.55s ease, transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: scale(1.025);
+}
+
+.journey-image-layer.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.journey-image-layer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.journey-image-overlay {
+    display: none !important;
+}
+
+.journey-image-meta {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.journey-image-year {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--gold-light, #F4D77A);
+}
+
+.journey-image-brand {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Mobile & Tablet Journey Stream (Hidden on Desktop > 1024px) */
+.journey-mobile-stream {
+    display: none;
+}
+
+/* =========================================
+   04. OUR PRESENCE ACROSS CHENNAI
+========================================= */
+.about-presence-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 48px;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.about-presence-visual {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3.2;
+    border: 2px solid rgba(212, 167, 44, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-presence-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-presence-visual-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(74, 0, 8, 0.88);
+    color: var(--gold-light, #F4D77A);
+    border: 1px solid var(--gold-main, #D4A72C);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about-location-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.about-loc-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px 22px;
+    border: 1px solid rgba(212, 167, 44, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.about-loc-card:hover,
+.about-loc-card:focus-visible {
+    transform: translateX(4px);
+    border-color: var(--brand-red, #A00012);
+    box-shadow: 0 8px 24px rgba(160, 0, 18, 0.12);
+    outline: none;
+}
+
+.about-loc-card-info h3 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.about-loc-card-info p {
+    font-size: 0.78rem;
+    color: var(--text-muted, #161616);
+    margin: 0;
+}
+
+.about-loc-card .loc-arrow {
+    font-size: 1.3rem;
+    color: var(--gold-main, #D4A72C);
+    transition: transform 0.3s ease;
+}
+
+.about-loc-card:hover .loc-arrow {
+    transform: translateX(4px);
+    color: var(--brand-red, #A00012);
+}
+
+/* =========================================
+   05. PROJECT SCALE & TRACK RECORD
+========================================= */
+.about-value-section {
+    background-color: var(--cream, #F6EDE1);
+    text-align: center;
+    border-top: 1px solid rgba(212, 167, 44, 0.25);
+    border-bottom: 1px solid rgba(212, 167, 44, 0.25);
+}
+
+.about-value-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(16px, 4vw, 36px);
+    margin: 32px 0 20px;
+    flex-wrap: wrap;
+}
+
+.about-value-amount {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1;
+}
+
+.about-value-arrow {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    color: var(--gold-main, #D4A72C);
+}
+
+.about-value-note {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 0.9375rem;
+    color: var(--text-muted, #161616);
+    line-height: 1.8;
+}
+
+/* =========================================
+   06. WHY AABE CONSTRUCTION (4 PILLARS)
+========================================= */
+.about-approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 36px;
+}
+
+.about-approach-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px 24px;
+    border: 1px solid rgba(212, 167, 44, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-approach-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold-main, #D4A72C);
+    box-shadow: 0 16px 36px rgba(160, 0, 18, 0.1);
+}
+
+.about-approach-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(160, 0, 18, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-red, #A00012);
+    margin-bottom: 20px;
+    border: 1px solid rgba(212, 167, 44, 0.3);
+}
+
+.about-approach-card h3 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    margin-bottom: 10px;
+    line-height: 1.25;
+}
+
+.about-approach-card p {
+    font-size: 0.875rem;
+    color: var(--text-muted, #161616);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =========================================
+   07. CLIENT STORIES — EDITORIAL CAROUSEL
+========================================= */
+.client-stories {
+    position: relative;
+    background-color: var(--cream, #F6EDE1);
+}
+
+.client-stories-track {
+    display: block;
+    padding: 90px 0;
+}
+
+.client-stories-inner {
+    width: 100%;
+    max-width: var(--container-width, 1380px);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.client-stories-header {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.client-stories-label {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #8A5A12);
+    margin-bottom: 8px;
+}
+
+.client-stories-header h2 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.client-stories-intro {
+    font-size: 0.9375rem;
+    color: var(--text-muted, #161616);
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.client-stories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: clamp(32px, 5vw, 60px);
+    align-items: center;
+}
+
+/* Visual Frame */
+.client-stories-visual {
+    position: relative;
+}
+
+.client-stories-image-frame {
+    position: relative;
+    aspect-ratio: 4 / 3.2;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(212, 167, 44, 0.45);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    background: #121212;
+}
+
+.client-stories-image-layer {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.55s ease, transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: scale(1.025);
+}
+
+.client-stories-image-layer.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.client-stories-image-layer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-stories-image-overlay {
+    display: none !important;
+}
+
+.client-stories-image-tag {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    background: rgba(74, 0, 8, 0.9);
+    color: var(--gold-light, #F4D77A);
+    border: 1px solid var(--gold-main, #D4A72C);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* Panel Right */
+.client-stories-panel-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-stories-counter {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+}
+
+.client-stories-arrows {
+    display: flex;
+    gap: 8px;
+}
+
+.client-stories-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(212, 167, 44, 0.4);
+    color: var(--brand-red, #A00012);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.client-stories-arrow:hover,
+.client-stories-arrow:focus-visible {
+    background: var(--brand-red, #A00012);
+    color: #FFFFFF;
+    border-color: var(--brand-red, #A00012);
+    outline: none;
+}
+
+.client-stories-content {
+    min-height: 220px;
+    position: relative;
+}
+
+.client-story-panel {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.client-story-panel.is-active {
+    display: block;
+}
+
+.client-stories-project-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--gold-deep, #8A5A12);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.client-story-headline {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(1.6rem, 2.2vw, 2rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.client-story-quote {
+    position: relative;
+    margin: 0 0 16px;
+}
+
+.client-story-quote p {
+    font-size: 0.9375rem;
+    color: var(--text-muted, #161616);
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0;
+}
+
+.client-story-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.client-story-name {
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    font-style: normal;
+    font-size: 0.9375rem;
+}
+
+.client-story-project {
+    font-size: 0.78rem;
+    color: var(--text-muted, #161616);
+}
+
+/* Tab Navigation */
+.client-stories-nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.client-story-nav {
+    flex: 1;
+    min-width: 140px;
+    background: #FFFFFF;
+    border: 1px solid rgba(212, 167, 44, 0.35);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.client-story-nav:hover,
+.client-story-nav:focus-visible {
+    border-color: var(--gold-main, #D4A72C);
+    background: var(--ivory, #FFF9F1);
+    outline: none;
+}
+
+.client-story-nav.is-active {
+    background: var(--brand-red, #A00012);
+    border-color: var(--gold-main, #D4A72C);
+    color: #FFFFFF;
+}
+
+.client-story-nav-num {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-right: 8px;
+    color: var(--gold-main, #D4A72C);
+}
+
+.client-story-nav.is-active .client-story-nav-num {
+    color: var(--gold-light, #F4D77A);
+}
+
+.client-story-nav-title {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.client-story-nav-sub {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-muted, #161616);
+}
+
+.client-story-nav.is-active .client-story-nav-sub {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.client-story-nav-arrow {
+    font-size: 1rem;
+    color: var(--gold-main, #D4A72C);
+}
+
+.client-story-nav.is-active .client-story-nav-arrow {
+    color: #FFFFFF;
+}
+
+/* Mobile Client Stories (Hidden on Desktop) */
+.client-stories-mobile {
+    display: none;
+}
+
+/* =========================================
+   08. FEATURE BANNERS & CTAS
+========================================= */
+.about-feature-banner {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 70px 40px;
+    text-align: center;
+    background-color: var(--dark-red-bg, #4A0008);
+    border: 2px solid rgba(212, 167, 44, 0.4);
+    box-shadow: 0 20px 48px rgba(74, 0, 8, 0.2);
+}
+
+.about-feature-banner-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.about-feature-banner-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.about-feature-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(74, 0, 8, 0.85) 0%, rgba(160, 0, 18, 0.75) 100%);
+    z-index: 1;
+}
+
+.about-feature-banner-content {
+    position: relative;
+    z-index: 10;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.about-feature-banner-content h2 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.about-feature-banner-content p {
+    font-size: 1rem;
+    color: rgba(255, 249, 241, 0.9);
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.about-contact-banner {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+
+.about-contact-banner h2 {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--brand-red, #A00012);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.about-contact-banner p {
+    font-size: 0.9375rem;
+    color: var(--text-muted, #161616);
+    margin-bottom: 24px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   09. RESPONSIVE BREAKPOINTS
+========================================= */
+@media (max-width: 1024px) {
+    .about-story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Hide Desktop 2-column Journey and show Vertical Stream */
+    .journey-grid {
+        display: none !important;
+    }
+
+    .journey-scroll-track {
+        padding: 64px 0;
+    }
+
+    .journey-mobile-stream {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        width: 100%;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    
+    .journey-stream-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    
+    .journey-stream-header {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .journey-stream-counter {
+        font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+        font-size: 0.8125rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        color: var(--gold-deep, #8A5A12);
+        margin-bottom: 4px;
+        text-transform: uppercase;
+    }
+    
+    .journey-stream-year {
+        font-family: var(--font-heading, 'Cormorant Garamond', serif);
+        font-size: clamp(2.4rem, 5.5vw, 3.4rem);
+        font-weight: 700;
+        color: var(--brand-red, #7A000E);
+        line-height: 1.05;
+        margin: 0 0 10px 0;
+        letter-spacing: -0.02em;
+    }
+    
+    .journey-stream-label {
+        font-size: 0.8125rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--gold-deep, #8A5A12);
+        margin-bottom: 6px;
+        display: inline-block;
+    }
+    
+    .journey-stream-lead {
+        font-family: var(--font-heading, 'Cormorant Garamond', serif);
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--brand-red, #7A000E);
+        margin: 0 0 8px 0;
+        line-height: 1.35;
+    }
+    
+    .journey-stream-desc {
+        font-size: 0.9375rem;
+        line-height: 1.7;
+        color: var(--text-dark, #161616);
+        margin: 0 0 14px 0;
+    }
+    
+    .journey-stream-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 4px;
+    }
+    
+    .journey-stream-tags span {
+        font-size: 0.6875rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 20px;
+        background: rgba(212, 167, 44, 0.12);
+        border: 1px solid rgba(212, 167, 44, 0.35);
+        color: var(--gold-dark, #8A5A12);
+    }
+    
+    .journey-stream-media {
+        position: relative;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 16 / 10;
+        box-shadow: 0 14px 34px rgba(74, 0, 8, 0.1);
+        border: 1.5px solid rgba(212, 167, 44, 0.4);
+        background-color: #EADBC8;
+    }
+    
+    .journey-stream-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .about-presence-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    .about-approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    
+    .client-stories-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .journey-scroll-track {
+        padding: 48px 0;
+    }
+    
+    .journey-mobile-stream {
+        gap: 48px;
+    }
+    
+    .journey-stream-media {
+        aspect-ratio: 16 / 11;
+        border-radius: 12px;
+    }
+
+    .about-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .about-location-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-story-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .client-stories-nav {
+        flex-direction: column;
+    }
+    
+    .about-feature-banner {
+        padding: 48px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    .about-hero .hero-cta .btn {
+        width: 100%;
+    }
+}

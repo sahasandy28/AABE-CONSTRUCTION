@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AABE Construction - Premium Chennai Residential Plots and Modern 5-7 Floor Apartments. Places where your story begins.">
+    
+    <title>AABE Construction | Premium Chennai Residential Plots & Apartments</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="brand-ribbon"></div>
+
+    <!-- 01. NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-mark gold-text">❖</span>
+                <div class="logo-text">
+                    <span class="logo-en gold-text">AABE</span>
+                    <span class="logo-sub">CONSTRUCTION</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <div class="nav-item-dropdown">
+                    <a href="projects.html" class="nav-link nav-link-dropdown">PROJECT <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="projects.html#plots" class="dropdown-item">PLOTS</a>
+                        <a href="projects.html#apartments" class="dropdown-item">APARTMENTS</a>
+                    </div>
+                </div>
+                <a href="blogs.html" class="nav-link">BLOGS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-gold btn-nav-enquire gold-shimmer">ENQUIRE NOW</a>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-nav-links">
+                <a href="#home" class="mobile-nav-link">HOME</a>
+                <a href="about.html" class="mobile-nav-link">ABOUT</a>
+                <div class="mobile-dropdown-wrap">
+                    <div class="mobile-dropdown-header">
+                        <a href="projects.html" class="mobile-nav-link mobile-dropdown-title">PROJECT</a>
+                        <button class="mobile-dropdown-toggle" aria-label="Toggle Project submenu">▼</button>
+                    </div>
+                    <div class="mobile-dropdown-sublinks">
+                        <a href="projects.html#plots" class="mobile-nav-sublink">PLOTS</a>
+                        <a href="projects.html#apartments" class="mobile-nav-sublink">APARTMENTS</a>
+                    </div>
+                </div>
+                <a href="blogs.html" class="mobile-nav-link">BLOGS</a>
+                <a href="#contact" class="mobile-nav-link">CONTACT</a>
+                <a href="#contact" class="btn btn-gold mt-4 w-full gold-shimmer">ENQUIRE NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+    <!-- 02. HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/hero-plots.jpg" alt="Premium residential plotted development and apartments in Chennai" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Vertical Scroll Indicator (Left Side) -->
+        <div class="hero-scroll-bar">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+            <span class="scroll-arrow">↓</span>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text-area reveal-stagger">
+                <span class="hero-eyebrow gold-text">AABE CONSTRUCTION</span>
+                <p class="hero-script-tag gold-text">Not just plots. Spaces designed for tomorrow.</p>
+                <h1 class="hero-title">PLOTS THAT BUILD<br><span class="italic-serif gold-text">YOUR FUTURE.</span></h1>
+                <p class="hero-description">Premium residential plots and thoughtfully planned 5–7 floor apartments for modern Chennai living.</p>
+                
+                <div class="hero-cta-group mt-4">
+                    <a href="#categories" class="btn btn-gold gold-shimmer">EXPLORE PROPERTIES →</a>
+                    <a href="#developments" class="btn btn-secondary">VIEW DEVELOPMENTS →</a>
+                </div>
+
+                <!-- Three Information Indicators -->
+                <div class="hero-feature-badges mt-5">
+                    <div class="hero-badge">
+                        <span class="badge-icon gold-text">📍</span>
+                        <div class="badge-text">
+                            <strong>RESIDENTIAL PLOTS</strong>
+                            <small>Chennai Growth Corridors</small>
+                        </div>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge-icon gold-text">🧭</span>
+                        <div class="badge-text">
+                            <strong>CHENNAI FOCUS</strong>
+                            <small>Kovilambakkam & Tambaram</small>
+                        </div>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge-icon gold-text">🏢</span>
+                        <div class="badge-text">
+                            <strong>5–7 FLOOR APARTMENTS</strong>
+                            <small>Mid-Rise Living</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Shallow Flowing Curved Wave Transition into About Section -->
+        <div class="hero-wave-transition">
+            <svg viewBox="0 0 1440 32" preserveAspectRatio="none" fill="none">
+                <path d="M0,32 C380,8 1060,8 1440,32 L1440,32 L0,32 Z" fill="#FFF9F1"></path>
+                <path d="M0,32 C380,8 1060,8 1440,32" stroke="#D4A72C" stroke-width="1" opacity="0.6"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 03. ABOUT AABE SECTION -->
+    <section id="about" class="about-section section-padding bg-ivory">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Column: Editorial Text (approx 38%) -->
+                <div class="about-content reveal-left">
+                    <span class="section-label gold-text">ABOUT AABE CONSTRUCTION</span>
+                    <h2 class="section-heading text-red">BUILT FOR TODAY.<br><span class="italic-serif gold-text">DESIGNED FOR TOMORROW.</span></h2>
+                    <div class="gold-divider mx-0"></div>
+                    
+                    <p class="about-body text-muted">
+                        At AABE Construction, we believe buying property is more than a transaction — it’s a foundational decision that shapes your family’s future.
+                    </p>
+                    <p class="about-body text-muted mt-3">
+                        We curate strategic residential plot communities and contemporary 5–7 floor apartments in high-potential Chennai suburban corridors with complete transparency, thoughtful engineering, and enduring value at the core.
+                    </p>
+                    <p class="about-body text-muted mt-2">
+                        From wide paved avenues to clear legal titles, every development is planned to ensure a seamless path toward building your dream home.
+                    </p>
+                    
+                    <div class="about-action mt-5">
+                        <a href="#developments" class="btn btn-gold gold-shimmer">KNOW MORE ABOUT AABE →</a>
+                    </div>
+                </div>
+
+                <!-- Center: Decorative Botanical Line Art -->
+                <div class="about-botanical-art">
+                    <svg viewBox="0 0 120 180" width="80" height="120" fill="none" stroke="#D4A72C" stroke-width="1.2" opacity="0.45">
+                        <path d="M60,170 C60,110 30,80 15,60 C35,60 55,75 60,95 C65,70 85,50 105,45 C95,65 80,85 60,110 C60,110 65,40 50,15 C45,35 50,55 60,75"/>
+                        <circle cx="60" cy="15" r="3" fill="#D4A72C" opacity="0.6"/>
+                    </svg>
+                </div>
+
+                <!-- Center/Right: Angled 3-Image Collage -->
+                <div class="about-collage-wrap reveal-right">
+                    <div class="collage-container">
+                        <!-- Image 01: Angled Parallelogram -->
+                        <div class="collage-item item-1">
+                            <img src="assets/images/dev-1.jpg" alt="Chennai residential plotted layout and road" loading="lazy">
+                            <div class="collage-caption">
+                                <span>BETTER LOCATIONS</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 02: Angled Parallelogram -->
+                        <div class="collage-item item-2">
+                            <img src="assets/images/dev-3.jpg" alt="Premium residential development landscaping and greenery" loading="lazy">
+                            <div class="collage-caption">
+                                <span>BETTER LIVING</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 03: Angled Parallelogram -->
+                        <div class="collage-item item-3">
+                            <img src="assets/images/cat-apartments.jpg" alt="Modern 5-7 floor apartment residential lifestyle" loading="lazy">
+                            <div class="collage-caption">
+                                <span>BETTER POSSIBILITIES</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Far-Right Vertical Brand Accent -->
+                    <div class="about-vertical-brand">
+                        <div class="v-brand-icon gold-text">❖</div>
+                        <div class="v-brand-letters gold-text">
+                            <span>A</span>
+                            <span>A</span>
+                            <span>B</span>
+                            <span>E</span>
+                        </div>
+                        <span class="v-brand-sub-label">CONSTRUCTION</span>
+                        <p class="v-brand-sub">Spaces designed around possibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shallow Asymmetric Curved Wave Transition into Next Section -->
+        <div class="about-wave-bottom">
+            <svg viewBox="0 0 1440 32" preserveAspectRatio="none" fill="none">
+                <path d="M0,0 C360,26 820,8 1160,22 C1300,26 1390,14 1440,10 L1440,32 L0,32 Z" fill="#F6EDE1"></path>
+                <path d="M0,0 C360,26 820,8 1160,22 C1300,26 1390,14 1440,10" stroke="#D4A72C" stroke-width="1" opacity="0.65"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 04. CHOOSE YOUR INVESTMENT (PLOTTED DEVELOPMENTS) -->
+    <div id="categories"></div>
+    <div id="developments"></div>
+    <section class="plots section-padding bg-cream" id="plots">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">CHOOSE YOUR INVESTMENT</span>
+                <h2 class="section-heading text-red">Three Plotted Developments.<br><span class="italic-serif gold-text">Compare & Decide.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">Three plotted developments — compare the published details, then take the next step.</p>
+            </div>
+            
+            <div class="investment-grid mt-5">
+                <!-- Project 01: Green City -->
+                <article class="plot-card featured bg-warm-white gold-border reveal-up" data-project="green-city" data-href="plots/kayar-mambakkam.html" tabindex="0" role="link" aria-label="View Green City Property Details">
+                    <div class="plot-img-wrapper">
+                        <a href="plots/kayar-mambakkam.html" aria-label="View Green City Property Page" tabindex="-1">
+                            <img src="assets/images/green-city-exact.jpg" alt="Green City Residential Plots in Kayar Mambakkam" loading="lazy">
+                            <div class="plot-badge gold-metallic">Project 01</div>
+                        </a>
+                    </div>
+                    <div class="plot-content">
+                        <h3 class="plot-title text-red">
+                            <a href="plots/kayar-mambakkam.html" class="text-red" style="text-decoration: none;" tabindex="-1">Green City</a>
+                        </h3>
+                        <p class="plot-location text-muted">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="gold-text"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Kayar – Mambakkam
+                        </p>
+                        <div class="plot-details">
+                            <div class="detail-item"><span class="detail-label text-muted">Type:</span> <strong class="text-red">Residential Plots</strong></div>
+                            <div class="detail-item"><span class="detail-label text-muted">Price:</span> <strong class="gold-text">₹4,000 / sq.ft</strong></div>
+                        </div>
+                        <ul class="plot-features">
+                            <li><span class="feat-check gold-text">✓</span> DTCP approved layout</li>
+                            <li><span class="feat-check gold-text">✓</span> Clear title legal documents</li>
+                            <li><span class="feat-check gold-text">✓</span> Bank loan available</li>
+                            <li><span class="feat-check gold-text">✓</span> 24.0 feet internal roads</li>
+                        </ul>
+                        <div class="plot-card-actions">
+                            <a href="plots/kayar-mambakkam.html" class="btn btn-gold btn-sm gold-shimmer w-full text-center">VIEW PROJECT DETAILS</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 02: Abi City -->
+                <article class="plot-card bg-warm-white gold-border reveal-up delay-1" data-project="abi-city" data-href="plots/thaiyur-thiruporur.html" tabindex="0" role="link" aria-label="View Abi City Property Details">
+                    <div class="plot-img-wrapper">
+                        <a href="plots/thaiyur-thiruporur.html" aria-label="View Abi City Property Page" tabindex="-1">
+                            <img src="assets/images/abi-city-exact.jpg" alt="Abi City Residential Plots in Thaiyur Thiruporur" loading="lazy">
+                            <div class="plot-badge gold-metallic">Project 02</div>
+                        </a>
+                    </div>
+                    <div class="plot-content">
+                        <h3 class="plot-title text-red">
+                            <a href="plots/thaiyur-thiruporur.html" class="text-red" style="text-decoration: none;" tabindex="-1">Abi City</a>
+                        </h3>
+                        <p class="plot-location text-muted">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="gold-text"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Thaiyur – Thiruporur
+                        </p>
+                        <div class="plot-details">
+                            <div class="detail-item"><span class="detail-label text-muted">Type:</span> <strong class="text-red">Residential Plots</strong></div>
+                            <div class="detail-item"><span class="detail-label text-muted">Price:</span> <strong class="gold-text">₹3,990 / sq.ft</strong></div>
+                        </div>
+                        <ul class="plot-features">
+                            <li><span class="feat-check gold-text">✓</span> DTCP App. No. 20/2025</li>
+                            <li><span class="feat-check gold-text">✓</span> Clear title plots</li>
+                            <li><span class="feat-check gold-text">✓</span> Dedicated park area</li>
+                            <li><span class="feat-check gold-text">✓</span> EB and water facility</li>
+                        </ul>
+                        <div class="plot-card-actions">
+                            <a href="plots/thaiyur-thiruporur.html" class="btn btn-gold btn-sm gold-shimmer w-full text-center">VIEW PROJECT DETAILS</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 03: Chola City -->
+                <article class="plot-card bg-warm-white gold-border reveal-up delay-2" data-project="chola-city" data-href="plots/prime-town.html" tabindex="0" role="link" aria-label="View Chola City Property Details">
+                    <div class="plot-img-wrapper">
+                        <a href="plots/prime-town.html" aria-label="View Chola City Property Page" tabindex="-1">
+                            <img src="assets/images/chola-city-exact.jpg" alt="Chola City Gated Plots in Uthiramerur" loading="lazy">
+                            <div class="plot-badge gold-metallic">Project 03</div>
+                        </a>
+                    </div>
+                    <div class="plot-content">
+                        <h3 class="plot-title text-red">
+                            <a href="plots/prime-town.html" class="text-red" style="text-decoration: none;" tabindex="-1">Chola City</a>
+                        </h3>
+                        <p class="plot-location text-muted">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="gold-text"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Uthiramerur, Kancheepuram
+                        </p>
+                        <div class="plot-details">
+                            <div class="detail-item"><span class="detail-label text-muted">Size:</span> <strong class="text-red">From 1,200 sq.ft</strong></div>
+                            <div class="detail-item"><span class="detail-label text-muted">Price:</span> <strong class="gold-text">From ₹24 Lakhs</strong></div>
+                        </div>
+                        <ul class="plot-features">
+                            <li><span class="feat-check gold-text">✓</span> Approx. ₹2,000 / sq.ft</li>
+                            <li><span class="feat-check gold-text">✓</span> Gated community</li>
+                            <li><span class="feat-check gold-text">✓</span> 24/7 security</li>
+                            <li><span class="feat-check gold-text">✓</span> Black top roads</li>
+                        </ul>
+                        <div class="plot-card-actions">
+                            <a href="plots/prime-town.html" class="btn btn-gold btn-sm gold-shimmer w-full text-center">VIEW PROJECT DETAILS</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05. WHY THESE 3 PROJECTS? -->
+    <section class="benefits section-padding bg-ivory" id="why-projects">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">WHY THESE 3 PROJECTS?</span>
+                <h2 class="section-heading text-red">Planned Developments.<br><span class="italic-serif gold-text">Clear Details.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">Each development is a plotted project with published pricing and layout details.</p>
+            </div>
+
+            <div class="benefits-grid mt-5">
+                <div class="benefit-item bg-warm-white gold-border reveal-up">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Three Locations</h4>
+                    <p class="benefit-desc text-muted">Green City, Abi City, and Chola City across key South Chennai suburban corridors.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-1">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">DTCP Approved Layouts</h4>
+                    <p class="benefit-desc text-muted">Each project is published with verified DTCP approvals and clear title legal deeds.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-2">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Published Pricing</h4>
+                    <p class="benefit-desc text-muted">₹4,000 / sq.ft, ₹3,990 / sq.ft, and Chola City from ₹24 Lakhs with full price transparency.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-3">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Residential Plots</h4>
+                    <p class="benefit-desc text-muted">All three projects are plotted developments. Chola City starts from 1,200 sq.ft onwards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. COMPARE THE THREE PROJECTS (FIND YOUR FIT) -->
+    <section class="compare-section section-padding bg-cream" id="compare">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">FIND YOUR FIT</span>
+                <h2 class="section-heading text-red">Which Project Is Right for You?<br><span class="italic-serif gold-text">Compare & Decide With Clarity.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">A side-by-side view using only the details published for each project.</p>
+            </div>
+
+            <p class="compare-hint reveal-up text-center text-muted mt-4">
+                <span>👉 Swipe or scroll horizontally to compare all three projects</span>
+            </p>
+            
+            <div class="compare-wrap gold-border bg-warm-white reveal-up mt-3">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="th-feature">Compare</th>
+                            <th scope="col" class="th-project" role="button" tabindex="0" aria-pressed="false" data-col="1">Green City</th>
+                            <th scope="col" class="th-project" role="button" tabindex="0" aria-pressed="false" data-col="2">Abi City</th>
+                            <th scope="col" class="th-project" role="button" tabindex="0" aria-pressed="false" data-col="3">Chola City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Property Type</th>
+                            <td>Residential Plots</td>
+                            <td>Residential Plots</td>
+                            <td>Residential Plots</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Location</th>
+                            <td>Kayar – Mambakkam</td>
+                            <td>Thaiyur-B Village, Thiruporur Taluk, Chengalpattu</td>
+                            <td>Uthiramerur Village, Kancheepuram District</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Published Price</th>
+                            <td><strong class="gold-text">₹4,000 / sq.ft</strong></td>
+                            <td><strong class="gold-text">₹3,990 / sq.ft</strong></td>
+                            <td><strong class="gold-text">Approx. ₹2,000 / sq.ft</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Starting Plot Size</th>
+                            <td>On request</td>
+                            <td>On request</td>
+                            <td><strong>1,200 sq.ft onwards</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Starting Price</th>
+                            <td>On request</td>
+                            <td>On request</td>
+                            <td><strong>From ₹24 Lakhs</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DTCP Approval</th>
+                            <td>DTCP approved layout</td>
+                            <td>DTCP App. No. 20/2025</td>
+                            <td>DTCP App. No. 245/2002</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Published Highlights</th>
+                            <td>Clear title legal documents, bank loan available, 24.0 ft internal roads</td>
+                            <td>Clear title plots, wide roads, park area, EB & water facility</td>
+                            <td>Black top roads, gated community, 24/7 security, street lights, avenue trees</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="compare-cta bg-dark-red text-ivory gold-border reveal-up mt-5">
+                <div class="cta-inner-flex">
+                    <div>
+                        <h3 class="cta-mini-title text-ivory">Not sure which project is right for you?</h3>
+                        <p class="cta-mini-desc text-muted-ivory">Speak with our property advisors for honest, transparent guidance.</p>
+                    </div>
+                    <a href="#enquiry" class="btn btn-gold gold-shimmer">Talk to an Advisor <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07. WHY THESE LOCATIONS (LOCATION ADVANTAGE & MAP) -->
+    <div id="location"></div>
+    <section class="locations section-padding bg-ivory" id="locations">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">LOCATION ADVANTAGE</span>
+                <h2 class="section-heading text-red">Why These Locations?<br><span class="italic-serif gold-text">Strategic Chennai Corridors.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">The three projects sit at Kayar – Mambakkam, Thaiyur – Thiruporur, and Uthiramerur.</p>
+            </div>
+
+            <div class="growth-layout mt-5">
+                <div class="growth-points reveal-left">
+                    <div class="growth-point bg-warm-white gold-border" data-target-loc="green-city" role="button" tabindex="0" aria-label="Locate Green City on live map">
+                        <div class="point-header">
+                            <span class="point-num gold-text">01</span>
+                            <h4 class="point-title text-red">Green City — Kayar – Mambakkam</h4>
+                        </div>
+                        <p class="point-desc text-muted">Project 01. Residential plots at ₹4,000 / sq.ft in Kayar – Mambakkam. DTCP approved layout with clear title legal documents and bank loan facility available.</p>
+                        <span class="point-map-action gold-text">Focus on Live Map &rarr;</span>
+                    </div>
+
+                    <div class="growth-point bg-warm-white gold-border mt-3" data-target-loc="abi-city" role="button" tabindex="0" aria-label="Locate Abi City on live map">
+                        <div class="point-header">
+                            <span class="point-num gold-text">02</span>
+                            <h4 class="point-title text-red">Abi City — Thaiyur – Thiruporur</h4>
+                        </div>
+                        <p class="point-desc text-muted">Project 02. Residential plots at ₹3,990 / sq.ft in Thaiyur-B Village, Thiruporur Taluk, Chengalpattu District. DTCP App. No. 20/2025 with park and utility connectivity.</p>
+                        <span class="point-map-action gold-text">Focus on Live Map &rarr;</span>
+                    </div>
+
+                    <div class="growth-point bg-warm-white gold-border mt-3" data-target-loc="chola-city" role="button" tabindex="0" aria-label="Locate Chola City on live map">
+                        <div class="point-header">
+                            <span class="point-num gold-text">03</span>
+                            <h4 class="point-title text-red">Chola City — Uthiramerur</h4>
+                        </div>
+                        <p class="point-desc text-muted">Project 03. Residential plots in Uthiramerur Village, Kancheepuram District. Starting plot size 1,200 sq.ft. Starting price ₹24 Lakhs. Approx. ₹2,000 / sq.ft. DTCP App. No. 245/2002.</p>
+                        <span class="point-map-action gold-text">Focus on Live Map &rarr;</span>
+                    </div>
+                </div>
+
+                <div class="growth-map-wrap reveal-right">
+                    <div class="growth-map gold-border" id="live-location-map" aria-label="Interactive map of Chennai residential projects">
+                        <!-- Live Leaflet Map Initialized via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08. PROJECT-SPECIFIC HIGHLIGHTS (EDITORIAL SPOTLIGHTS) -->
+    <section class="project-highlight section-padding bg-cream" id="highlight-kayar">
+        <div class="container highlight-grid">
+            <div class="highlight-image gold-border reveal-left">
+                <img src="assets/images/green-city-exact.jpg" alt="Green City Residential Layout in Kayar Mambakkam" loading="lazy">
+            </div>
+            <div class="highlight-content reveal-right">
+                <span class="section-label gold-text">PROJECT 01 — PLOTS</span>
+                <h2 class="section-heading text-red">Green City</h2>
+                <div class="gold-divider mx-0 my-2"></div>
+                <p class="lead-text text-muted">Residential plots at ₹4,000 per sq.ft in Kayar – Mambakkam.</p>
+                <ul class="highlight-points stagger mt-4">
+                    <li><strong class="gold-text">Type:</strong> Residential Plots</li>
+                    <li><strong class="gold-text">Published Price:</strong> ₹4,000 / sq.ft</li>
+                    <li><strong class="gold-text">Approval:</strong> DTCP approved layout</li>
+                    <li><strong class="gold-text">Documentation:</strong> Clear title legal documents</li>
+                    <li><strong class="gold-text">Finance:</strong> Bank loan facility available</li>
+                    <li><strong class="gold-text">Infrastructure:</strong> 24.0 feet wide internal roads</li>
+                </ul>
+                <div class="mt-4 flex-actions">
+                    <a href="plots/kayar-mambakkam.html" class="btn btn-gold gold-shimmer">Explore Project Details <span class="arrow">&rarr;</span></a>
+                    <a href="#enquiry" class="btn btn-outline-dark" data-interest="Green City">Request Brochure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-highlight section-padding bg-ivory" id="highlight-thaiyur">
+        <div class="container highlight-grid highlight-grid-reverse">
+            <div class="highlight-image gold-border reveal-right">
+                <img src="assets/images/abi-city-exact.jpg" alt="Abi City Residential Plots Thaiyur Thiruporur" loading="lazy">
+            </div>
+            <div class="highlight-content reveal-left">
+                <span class="section-label gold-text">PROJECT 02 — PLOTS</span>
+                <h2 class="section-heading text-red">Abi City</h2>
+                <div class="gold-divider mx-0 my-2"></div>
+                <p class="lead-text text-muted">Residential plots at ₹3,990 per sq.ft in Thaiyur-B Village, Thiruporur Taluk, Chengalpattu District.</p>
+                <ul class="highlight-points stagger mt-4">
+                    <li><strong class="gold-text">Type:</strong> Residential Plots</li>
+                    <li><strong class="gold-text">Published Price:</strong> ₹3,990 / sq.ft</li>
+                    <li><strong class="gold-text">Approval:</strong> DTCP App. No. 20/2025</li>
+                    <li><strong class="gold-text">Layout:</strong> Clear title plots with wide avenues</li>
+                    <li><strong class="gold-text">Amenities:</strong> Dedicated landscaped park area</li>
+                    <li><strong class="gold-text">Utilities:</strong> EB facility and reliable potable water</li>
+                </ul>
+                <div class="mt-4 flex-actions">
+                    <a href="plots/thaiyur-thiruporur.html" class="btn btn-gold gold-shimmer">Explore Project Details <span class="arrow">&rarr;</span></a>
+                    <a href="#enquiry" class="btn btn-outline-dark" data-interest="Abi City">Request Brochure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-highlight section-padding bg-cream" id="highlight-prime-town">
+        <div class="container highlight-grid">
+            <div class="highlight-image gold-border reveal-left">
+                <img src="assets/images/chola-city-exact.jpg" alt="Chola City Gated Community in Uthiramerur" loading="lazy">
+            </div>
+            <div class="highlight-content reveal-right">
+                <span class="section-label gold-text">PROJECT 03 — PLOTS</span>
+                <h2 class="section-heading text-red">Chola City</h2>
+                <div class="gold-divider mx-0 my-2"></div>
+                <p class="lead-text text-muted">Residential plots in Uthiramerur. Starting plot size 1,200 sq.ft. Starting price ₹24 Lakhs. Approximate price ₹2,000 per sq.ft.</p>
+                <ul class="highlight-points stagger mt-4">
+                    <li><strong class="gold-text">Type:</strong> Residential Plots</li>
+                    <li><strong class="gold-text">Starting Size:</strong> 1,200 sq.ft onwards</li>
+                    <li><strong class="gold-text">Starting Price:</strong> From ₹24 Lakhs (Approx. ₹2,000 / sq.ft)</li>
+                    <li><strong class="gold-text">Approval:</strong> DTCP App. No. 245/2002</li>
+                    <li><strong class="gold-text">Security:</strong> Gated community with 24/7 security</li>
+                    <li><strong class="gold-text">Roads:</strong> Durable black top internal roads & street lights</li>
+                </ul>
+                <div class="mt-4 flex-actions">
+                    <a href="plots/prime-town.html" class="btn btn-gold gold-shimmer">Explore Project Details <span class="arrow">&rarr;</span></a>
+                    <a href="#enquiry" class="btn btn-outline-dark" data-interest="Chola City">Request Brochure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 09. WHY BUY FROM AABE CONSTRUCTION? -->
+    <section class="benefits section-padding bg-ivory" id="why-us">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">OUR PROMISE</span>
+                <h2 class="section-heading text-red">Why Buy From AABE Construction?<br><span class="italic-serif gold-text">Trust, Legality & Enduring Value.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">We focus on transparency, legality, and value creation — from the first site visit through registration.</p>
+            </div>
+
+            <div class="benefits-grid why-aabe-grid mt-5">
+                <div class="benefit-item bg-warm-white gold-border reveal-up">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Verified Land</h4>
+                    <p class="benefit-desc text-muted">Legally verified properties with clear titles, government approvals, and complete transparency.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-1">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Clear Documentation</h4>
+                    <p class="benefit-desc text-muted">A clear, straightforward document trail from booking through to final registry.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-2">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Strategic Locations</h4>
+                    <p class="benefit-desc text-muted">Thoughtfully selected residential plots at Green City, Abi City, and Chola City.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-3">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Transparent Pricing</h4>
+                    <p class="benefit-desc text-muted">Published starting prices, with detailed plot-specific quotations available from an advisor.</p>
+                </div>
+
+                <div class="benefit-item bg-warm-white gold-border reveal-up delay-4">
+                    <div class="benefit-icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A72C" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h4 class="benefit-title text-red">Registration Support</h4>
+                    <p class="benefit-desc text-muted">Hands-on advisor-led documentation support through to complete property handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. BUYER TESTIMONIALS -->
+    <section class="testimonials section-padding bg-cream" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">BUYER EXPERIENCES</span>
+                <h2 class="section-heading text-red">What Our Buyers Say.<br><span class="italic-serif gold-text">Verified Feedback.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">Verified buyer notes from the projects they purchased.</p>
+            </div>
+            
+            <div class="testimonial-slider-wrap reveal-up mt-5">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active bg-warm-white gold-border">
+                        <div class="quote-icon gold-text">“</div>
+                        <p class="quote-text text-muted">The entire process was simple, transparent and highly professional. We bought a plot at Green City and the team handled the documentation perfectly.</p>
+                        <div class="author-box">
+                            <h4 class="author-name text-red">Karthik R.</h4>
+                            <span class="author-tag gold-text">Green City &bull; Plot Buyer</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide bg-warm-white gold-border">
+                        <div class="quote-icon gold-text">“</div>
+                        <p class="quote-text text-muted">I appreciate their focus on clear titles. As an NRI buyer, trust was my biggest concern, and they ensured I had zero worries throughout the purchase.</p>
+                        <div class="author-box">
+                            <h4 class="author-name text-red">Arun M.</h4>
+                            <span class="author-tag gold-text">Abi City &bull; Plot Buyer</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide bg-warm-white gold-border">
+                        <div class="quote-icon gold-text">“</div>
+                        <p class="quote-text text-muted">The AABE team explained the layout clearly, arranged our site visit on Sunday, and made the registration completely hassle-free.</p>
+                        <div class="author-box">
+                            <h4 class="author-name text-red">Priya S.</h4>
+                            <span class="author-tag gold-text">Chola City &bull; Plot Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls text-center mt-4">
+                    <button type="button" class="slider-btn prev-btn gold-border" id="prev-testi" aria-label="Previous testimonial">&larr;</button>
+                    <button type="button" class="slider-btn next-btn gold-border" id="next-testi" aria-label="Next testimonial">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FAQ ACCORDION -->
+    <section class="faq-section section-padding bg-ivory" id="faq">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-label gold-text">COMMON QUESTIONS</span>
+                <h2 class="section-heading text-red">Frequently Asked Questions.<br><span class="italic-serif gold-text">Clear Answers.</span></h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle mx-auto text-muted">Everything you need to know about our plotted developments, pricing, and approvals.</p>
+            </div>
+            
+            <div class="faq-accordion-grid mt-5">
+                <!-- Column 1 -->
+                <div class="faq-column reveal-left">
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">Where are the three projects located?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Our projects are located across Kayar–Mambakkam, Thaiyur–Thiruporur, and Uthiramerur. Each location has been selected for its connectivity and future growth potential.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">Are the layouts DTCP approved?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Yes. The project details include the applicable DTCP approval information. Buyers can review the published approval details before proceeding.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">What is the published pricing for each project?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Published prices vary by project and location. Please refer to the respective project details for the current price information.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">What plot sizes are available?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Available plot sizes vary by project. Please check the individual project details or contact our advisor for current availability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="faq-column reveal-right">
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">Are bank loans available for these plots?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Bank loan facilities are available for eligible projects, subject to the buyer's eligibility and the respective bank's approval process.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">Can I schedule a free site visit?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Yes. You can contact our property advisor to schedule a site visit. Our team will help arrange a convenient date and time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">What documents are provided before booking?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Relevant project and legal documentation will be shared for review before booking. Our advisor can explain the applicable documents for each project.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item gold-border bg-warm-white">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="text-red">How do I book a plot?</span>
+                            <span class="faq-toggle-icon gold-text">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-muted">Contact our property advisor to check availability and complete the booking process. The team will guide you through the required documentation and next steps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. CINEMATIC ENQUIRY CTA & LEAD FORM -->
+    <div id="contact"></div>
+    <section class="enquiry-cta-section" id="enquiry">
+        <div class="container cta-container">
+            <div class="enquiry-grid">
+                <!-- Left Side: Cinematic Property Visual (~50% width) -->
+                <div class="enquiry-visual-col reveal-left">
+                    <div class="enquiry-image-card gold-border">
+                        <img src="assets/images/dev-4.jpg" alt="AABE Construction residential properties and plots in Chennai" class="enquiry-cover-img" loading="lazy">
+                        <div class="enquiry-img-overlay"></div>
+                        <div class="enquiry-img-badge">
+                            <span class="badge-icon gold-text">❖</span>
+                            <div class="badge-text">
+                                <strong class="gold-text">AABE CONSTRUCTION</strong>
+                                <small>Plotted Communities & Mid-Rise Living</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Premium Enquiry Form Card (~50% width) -->
+                <div class="enquiry-form-col reveal-right">
+                    <div class="cta-form-card gold-border">
+                        <div class="form-card-header">
+                            <span class="form-tag gold-text">GET IN TOUCH</span>
+                            <h3 class="form-title text-ivory">Enquire About a Project</h3>
+                            <p class="form-subtitle text-muted-ivory">Fill in your requirements below and our property advisor will connect with you.</p>
+                        </div>
+                        
+                        <form id="contact-form" class="enquiry-form" novalidate>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="e.g. Saha Moorthy" required>
+                                    <span class="error-msg">Please enter your name</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="e.g. 0987654321" required>
+                                    <span class="error-msg">Valid phone number required</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="email">Email (Optional)</label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. name@example.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="interest">Which project are you interested in?</label>
+                                    <div class="custom-select">
+                                        <select id="interest" name="interest">
+                                            <option value="Green City">Project 01 — Green City (Kayar – Mambakkam)</option>
+                                            <option value="Abi City">Project 02 — Abi City (Thaiyur – Thiruporur)</option>
+                                            <option value="Chola City">Project 03 — Chola City (Uthiramerur)</option>
+                                            <option value="Not sure — Help me choose">Not sure — Help me choose</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message (Optional)</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell us about your plot or property requirements..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold w-full btn-submit gold-shimmer mt-2">
+                                SUBMIT ENQUIRY &rarr;
+                            </button>
+                            
+                            <p class="form-privacy-note text-center text-muted-ivory text-xs mt-3">
+                                🔒 Your details are safe with us. We respect your privacy.
+                            </p>
+                            
+                            <div class="form-success-msg hidden" id="form-success" style="display: none;">
+                                ✓ Thank you! Your enquiry has been received. Our property advisor will connect with you shortly.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- 13. MULTI-COLUMN PREMIUM FOOTER -->
+    <footer class="footer bg-footer text-ivory">
+        <div class="container footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-mark gold-text">❖</span>
+                    <span class="gold-text">AABE CONSTRUCTION</span>
+                </a>
+                <p class="footer-desc mt-2">PLOTS • APARTMENTS • CHENNAI</p>
+                <p class="footer-brand-bio text-xs text-muted-ivory mt-3">
+                    Residential plots at Green City, Abi City and Chola City. Thoughtfully planned with clear documentation and enduring value.
+                </p>
+                <div class="footer-rating-pill mt-3">
+                    <span class="gold-text">★ 4.0 / 5.0</span>
+                    <small>Verified Google Rating</small>
+                </div>
+            </div>
+            
+            <!-- Projects Column -->
+            <div class="footer-col">
+                <h4 class="footer-heading gold-text">PROJECTS</h4>
+                <div class="footer-links">
+                    <a href="#highlight-kayar">Green City (Kayar)</a>
+                    <a href="#highlight-thaiyur">Abi City (Thaiyur)</a>
+                    <a href="#highlight-prime-town">Chola City (Uthiramerur)</a>
+                    <a href="#compare">Compare Projects</a>
+                </div>
+            </div>
+
+            <!-- Company Column -->
+            <div class="footer-col">
+                <h4 class="footer-heading gold-text">COMPANY</h4>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About AABE</a>
+                    <a href="#why-us">Why Choose Us</a>
+                    <a href="#enquiry">Talk to an Advisor</a>
+                </div>
+            </div>
+            
+            <!-- Resources Column -->
+            <div class="footer-col">
+                <h4 class="footer-heading gold-text">RESOURCES</h4>
+                <div class="footer-links">
+                    <a href="#locations">Location Advantage</a>
+                    <a href="#faq">Frequently Asked Questions</a>
+                    <a href="#testimonials">Buyer Experiences</a>
+                    <a href="#enquiry">Schedule Site Visit</a>
+                </div>
+            </div>
+            
+            <!-- Get In Touch Column -->
+            <div class="footer-col footer-contact-col">
+                <h4 class="footer-heading gold-text">CONTACT</h4>
+                <p class="footer-phone-wrap mb-2">
+                    <a href="tel:09842311887" class="footer-phone gold-text font-serif">098423 11887</a>
+                </p>
+                <address class="footer-address not-italic text-xs text-muted-ivory">
+                    First Floor, Freedom Rd, behind JD Mahal,<br>
+                    S. Kolathur, Viduthalai Nagar Extn,<br>
+                    Kovilambakkam, Chennai,<br>
+                    Tambaram, Tamil Nadu 600117
+                </address>
+                <a href="#enquiry" class="btn footer-cta mt-4">SCHEDULE A VISIT</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 AABE Construction. All Rights Reserved.</p>
+                <p class="footer-tagline-right text-xs text-muted-ivory">Residential Plots & Plotted Communities in Chennai.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE PROJECT DETAIL MODALS -->
+    <!-- Modal 01: Green City -->
+    <div class="project-modal" id="modal-green-city" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog bg-warm-white gold-border">
+            <button type="button" class="modal-close-btn gold-text" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header-banner">
+                    <img src="assets/images/green-city-exact.jpg" alt="Green City Layout Overview">
+                    <div class="modal-banner-badge gold-metallic">PROJECT 01 &bull; PLOTS</div>
+                </div>
+                <div class="modal-inner-content">
+                    <h3 class="modal-project-title text-red">Green City</h3>
+                    <p class="modal-project-loc text-muted">📍 Kayar – Mambakkam, South Chennai</p>
+                    <div class="modal-stats-grid mt-3">
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Published Price</small>
+                            <strong class="gold-text">₹4,000 / sq.ft</strong>
+                        </div>
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Approval</small>
+                            <strong class="text-red">DTCP Approved</strong>
+                        </div>
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Road Width</small>
+                            <strong class="text-red">24.0 Feet Avenues</strong>
+                        </div>
+                    </div>
+                    <div class="modal-detail-text mt-4">
+                        <h4 class="text-red font-serif">Key Project Highlights</h4>
+                        <ul class="modal-feat-list mt-2">
+                            <li>✓ DTCP approved layout with clear title legal documents</li>
+                            <li>✓ Bank loan availability from leading institutions</li>
+                            <li>✓ Wide 24.0 feet paved internal roads with drainage</li>
+                            <li>✓ High-growth residential zone near IT and healthcare hubs</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions mt-4">
+                        <a href="#enquiry" class="btn btn-gold w-full gold-shimmer btn-close-and-scroll" data-interest="Green City">Book Site Visit / Get Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 02: Abi City -->
+    <div class="project-modal" id="modal-abi-city" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog bg-warm-white gold-border">
+            <button type="button" class="modal-close-btn gold-text" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header-banner">
+                    <img src="assets/images/abi-city-exact.jpg" alt="Abi City Layout Overview">
+                    <div class="modal-banner-badge gold-metallic">PROJECT 02 &bull; PLOTS</div>
+                </div>
+                <div class="modal-inner-content">
+                    <h3 class="modal-project-title text-red">Abi City</h3>
+                    <p class="modal-project-loc text-muted">📍 Thaiyur-B Village, Thiruporur Taluk, Chengalpattu</p>
+                    <div class="modal-stats-grid mt-3">
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Published Price</small>
+                            <strong class="gold-text">₹3,990 / sq.ft</strong>
+                        </div>
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Approval No.</small>
+                            <strong class="text-red">DTCP 20/2025</strong>
+                        </div>
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Amenities</small>
+                            <strong class="text-red">Park Area & EB</strong>
+                        </div>
+                    </div>
+                    <div class="modal-detail-text mt-4">
+                        <h4 class="text-red font-serif">Key Project Highlights</h4>
+                        <ul class="modal-feat-list mt-2">
+                            <li>✓ DTCP App. No. 20/2025 with clear title verification</li>
+                            <li>✓ Dedicated landscaped park area for community living</li>
+                            <li>✓ Immediate EB facility and excellent groundwater supply</li>
+                            <li>✓ Convenient connectivity to OMR and Kelambakkam junction</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions mt-4">
+                        <a href="#enquiry" class="btn btn-gold w-full gold-shimmer btn-close-and-scroll" data-interest="Abi City">Book Site Visit / Get Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 03: Chola City -->
+    <div class="project-modal" id="modal-chola-city" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog bg-warm-white gold-border">
+            <button type="button" class="modal-close-btn gold-text" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header-banner">
+                    <img src="assets/images/chola-city-exact.jpg" alt="Chola City Layout Overview">
+                    <div class="modal-banner-badge gold-metallic">PROJECT 03 &bull; PLOTS</div>
+                </div>
+                <div class="modal-inner-content">
+                    <h3 class="modal-project-title text-red">Chola City</h3>
+                    <p class="modal-project-loc text-muted">📍 Uthiramerur Village, Kancheepuram District</p>
+                    <div class="modal-stats-grid mt-3">
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Starting Price</small>
+                            <strong class="gold-text">From ₹24 Lakhs</strong>
+                        </div>
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Starting Plot Size</small>
+                            <strong class="text-red">1,200 sq.ft</strong>
+                        </div>
+                        <div class="modal-stat-box bg-ivory gold-border">
+                            <small class="text-muted">Approval No.</small>
+                            <strong class="text-red">DTCP 245/2002</strong>
+                        </div>
+                    </div>
+                    <div class="modal-detail-text mt-4">
+                        <h4 class="text-red font-serif">Key Project Highlights</h4>
+                        <ul class="modal-feat-list mt-2">
+                            <li>✓ Attractive entry price approx. ₹2,000 / sq.ft</li>
+                            <li>✓ Gated community setup with 24/7 round-the-clock security</li>
+                            <li>✓ Durable black top internal roads and street lighting</li>
+                            <li>✓ Avenue plantation and peaceful residential surroundings</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions mt-4">
+                        <a href="#enquiry" class="btn btn-gold w-full gold-shimmer btn-close-and-scroll" data-interest="Chola City">Book Site Visit / Get Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions desktop-only">
+        <a href="tel:09842311887" class="float-btn float-call gold-glow" aria-label="Call Us">
+            <span class="float-label">Call 098423 11887</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" class="gold-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <a href="https://wa.me/919842311887" class="float-btn float-wa tooltip-wrap gold-glow" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <span class="float-label">Enquire via WhatsApp</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" class="gold-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </a>
+    </div>
+
+    <!-- Mobile Bottom Action Bar -->
+    <div class="mobile-action-bar mobile-only">
+        <a href="tel:09842311887" class="action-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            CALL NOW
+        </a>
+        <a href="https://wa.me/919842311887" class="action-item wa-action" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            WHATSAPP
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="js/location-map.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script defer src="js/animations.js"></script>
+    <script defer src="js/contact.js"></script>
+</body>
+</html>
