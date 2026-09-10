@@ -2716,16 +2716,18 @@ h1.text-red, h2.text-red, h3.text-red, h4.text-red, h5.text-red, h6.text-red,
 }
 
 .footer-phone {
-    font-size: 1.35rem;
-    font-weight: 700;
+    font-family: var(--font-body, 'Plus Jakarta Sans', 'Inter', sans-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ivory, #FFF9F1);
     text-decoration: none;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     display: inline-block;
     transition: all 0.3s ease;
 }
 .footer-phone:hover {
-    filter: brightness(1.2);
-    transform: scale(1.02);
+    color: var(--gold-light, #F4D77A);
+    transform: translateY(-1px);
 }
 
 .footer-address {
