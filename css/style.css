@@ -2725,15 +2725,22 @@ h1.text-red, h2.text-red, h3.text-red, h4.text-red, h5.text-red, h6.text-red,
     flex-direction: column;
 }
 .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.85rem;
-    font-family: var(--font-heading);
-    font-weight: 700;
+    display: inline-block;
     text-decoration: none;
     line-height: 1;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.6rem;
+    width: fit-content;
+}
+.footer-brand-img {
+    height: 46px;
+    width: auto;
+    max-width: 210px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.footer-brand-img:hover {
+    transform: scale(1.02);
 }
 .footer-desc {
     color: rgba(255, 249, 241, 0.75);
