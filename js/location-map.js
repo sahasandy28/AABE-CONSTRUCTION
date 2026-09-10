@@ -1,6 +1,6 @@
 /**
  * location-map.js
- * Clean Interactive Live Map for AABE Construction
+ * Clean Interactive Live Map for AABE Developers
  * Powered by Leaflet + OpenStreetMap
  * - 100% Free, No API Key Required, Zero Watermarks
  * - Real geographic coordinates for Green City, Abi City, and Chola City

@@ -1,6 +1,6 @@
 /**
  * contact.js
- * Handles Form Validation and Lead Capture for AABE Construction
+ * Handles Form Validation and Lead Capture for AABE Developers
  */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,10 +1,21 @@
 /**
  * main.js
- * Initialize AABE Construction Application
+ * Initialize AABE Developers Application
  * Handles Testimonials Slider, Interactive Project Modals, FAQ Accordion, and Navigation
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. AABE DEVELOPERS Animated Brand Intro Controller
+    const brandIntro = document.getElementById('brandIntro');
+    if (brandIntro) {
+        setTimeout(() => {
+            brandIntro.classList.add('fade-out');
+            setTimeout(() => {
+                brandIntro.style.display = 'none';
+            }, 700);
+        }, 1750);
+    }
+
     // 1. FAQ Accordion Interaction (+ / − toggle)
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
@@ -220,5 +231,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    console.log('AABE Construction Website Initialized Successfully');
+    console.log('AABE Developers Website Initialized Successfully');
 });

@@ -1,6 +1,6 @@
 /**
  * about.js
- * Interactive logic for AABE Construction About Page
+ * Interactive logic for AABE Developers About Page
  * Handles:
  * 1. Scroll-Locked Cinematic Journey Timeline (5-Phase Wheel & Trackpad Controlled Progression)
  * 2. Client Stories / Project Stories Carousel

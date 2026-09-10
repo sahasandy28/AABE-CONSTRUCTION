@@ -212,6 +212,17 @@
     .logo {
         gap: 8px;
     }
+    .logo-brand-img {
+        height: 32px;
+        max-width: 145px;
+    }
+    .brand-intro-container {
+        max-width: 320px;
+        padding: 1.5rem;
+    }
+    .brand-intro-logo {
+        max-width: 280px;
+    }
     .logo-mark {
         font-size: 1.15rem;
     }

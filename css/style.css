@@ -482,6 +482,17 @@ h1.text-red, h2.text-red, h3.text-red, h4.text-red, h5.text-red, h6.text-red,
     gap: 0.6rem;
     text-decoration: none;
 }
+.logo-brand-img {
+    height: 40px;
+    width: auto;
+    max-width: 190px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.logo-brand-img:hover {
+    transform: scale(1.02);
+}
 .logo-mark {
     color: var(--gold-main);
     font-size: 1.3rem;
@@ -506,6 +517,74 @@ h1.text-red, h2.text-red, h3.text-red, h4.text-red, h5.text-red, h6.text-red,
 }
 .navbar.scrolled .logo-sub {
     color: var(--text-muted);
+}
+
+/* =========================================
+   AABE DEVELOPERS ANIMATED LOGO INTRO
+========================================= */
+.brand-intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background: radial-gradient(circle at center, #FFF9F1 0%, #F5EBE1 60%, #E8D9C8 100%);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.65s;
+}
+
+.brand-intro-overlay.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.brand-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 480px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.brand-intro-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+    animation: aabeIntroReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    filter: drop-shadow(0 10px 25px rgba(154, 100, 20, 0.12));
+}
+
+@keyframes aabeIntroReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(14px) scale(0.94);
+    }
+    45% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    85% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .nav-links {
