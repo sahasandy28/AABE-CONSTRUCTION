@@ -2861,17 +2861,30 @@ h1.text-red, h2.text-red, h3.text-red, h4.text-red, h5.text-red, h6.text-red,
 .footer-bottom {
     border-top: 1px solid rgba(255, 249, 241, 0.12);
     padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
 }
 .footer-bottom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 .footer-bottom p {
     color: rgba(255, 249, 241, 0.55);
     font-size: 0.8125rem;
     letter-spacing: 0.05em;
     margin: 0;
+}
+.footer-credit {
+    color: rgba(255, 249, 241, 0.65) !important;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+}
+.footer-credit-name {
+    color: var(--gold-accent, #D4AF37);
+    font-weight: 600;
+    letter-spacing: 0.06em;
 }
 
 /* =========================================
