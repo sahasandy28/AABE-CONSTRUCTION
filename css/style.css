@@ -2715,39 +2715,52 @@ h1.text-red, h2.text-red, h3.text-red, h4.text-red, h5.text-red, h6.text-red,
     -webkit-text-fill-color: transparent;
 }
 
+.footer-phone-wrap {
+    margin-bottom: 0.75rem;
+}
+
 .footer-phone {
     font-family: var(--font-body, 'Plus Jakarta Sans', 'Inter', sans-serif);
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--ivory, #FFF9F1);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 249, 241, 0.8);
     text-decoration: none;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     display: inline-block;
     transition: all 0.3s ease;
 }
 .footer-phone:hover {
-    color: var(--gold-light, #F4D77A);
-    transform: translateY(-1px);
+    color: var(--gold-highlight);
+    transform: translateX(4px);
+    background: linear-gradient(110deg, #9A6414, #D4A72C 30%, #FFF0A8 50%, #E6BE4A 70%, #A87418);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-address {
+    font-family: var(--font-body, 'Plus Jakarta Sans', 'Inter', sans-serif);
+    font-size: 0.875rem;
+    color: rgba(255, 249, 241, 0.8);
     line-height: 1.6;
-    margin-top: 0.5rem;
+    margin-top: 0;
 }
 
 .footer-cta {
     display: inline-flex;
     width: fit-content;
-    padding: 0.75rem 1.6rem;
-    font-size: 0.6875rem;
-    letter-spacing: 0.15em;
+    padding: 0.65rem 1.4rem;
+    font-family: var(--font-body, 'Plus Jakarta Sans', 'Inter', sans-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
     font-weight: 600;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 1px solid rgba(212, 167, 44, 0.6);
     color: var(--ivory);
     background-color: transparent;
     text-decoration: none;
     transition: var(--transition);
+    margin-top: 1rem;
 }
 .footer-cta:hover {
     background: linear-gradient(120deg, #9A6414, #D4A72C 30%, #FFF0A8 50%, #E6BE4A 70%, #A87418 100%);
